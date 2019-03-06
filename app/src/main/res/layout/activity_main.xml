@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gradCheck"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="310dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="193dp"
+        android:text="Total:"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fees" />
+
+    <TextView
+        android:id="@+id/fees"
+        android:layout_width="310dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="10dp"
+        android:text="Fees:"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/total"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tuition" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="178dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="117dp"
+        android:layout_marginBottom="27dp"
+        android:text="@string/tuition_calculator"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/creditHours"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/creditHours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="98dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="220dp"
+        android:ems="10"
+        android:hint="@string/credit_hours"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/tuition"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        android:importantForAutofill="no" />
+
+    <RadioGroup
+        android:id="@+id/gradCheck"
+        android:layout_width="150dp"
+        android:layout_height="119dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="9dp"
+        app:layout_constraintEnd_toStartOf="@+id/resCheck"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/creditHours">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Graduate" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Undergraduate" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/resCheck"
+        android:layout_width="150dp"
+        android:layout_height="119dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toEndOf="@+id/gradCheck"
+        app:layout_constraintTop_toBottomOf="@+id/creditHours">
+
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Resident" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Non-Resident" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tuition"
+        android:layout_width="310dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="71dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="10dp"
+        android:text="Tuition:"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/fees"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gradCheck" />
+</android.support.constraint.ConstraintLayout>

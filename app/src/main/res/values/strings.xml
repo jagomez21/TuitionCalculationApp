@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Tuition Calculation App</string>
+    <string name="tuition_calculator">Tuition Calculator</string>
+    <string name="credit_hours">Credit Hours</string>
+    <string name="total">Total:</string>
+    <string name="fees">Fees:</string>
+    <string name="graduate">Graduate</string>
+    <string name="undergraduate">Undergraduate</string>
+    <string name="resident">Resident</string>
+    <string name="non_resident">Non-Resident</string>
+    <string name="tuition">Tuition:</string>
+    <string name="min_1_max_24">(Min: 1 - Max: 24)</string>
+</resources>
